@@ -2,7 +2,7 @@
 
 """
 Author: Bradley Fernando
-Purpose: Parse the 'show version' output and look for the model and serial
+Purpose: Parses the 'show version' output and looks for the model and serial
          numbers of a device. 
 
 Usage: 

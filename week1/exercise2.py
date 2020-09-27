@@ -2,7 +2,8 @@
 
 """
 Author: Bradley Fernando
-Purpose: Convert IPs to hexidecimal and binary format and tabulate the output.  
+Purpose: Converts IPs to hexidecimal and binary format. Displays the output into
+         a table. 
 
 Usage: 
     python exercise2.py

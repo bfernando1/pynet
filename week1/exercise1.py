@@ -2,7 +2,7 @@
 
 """
 Author: Bradley Fernando
-Purpose: A python script that prints 3 IP addresses to standard output
+Purpose: Prints 3 IP addresses to standard output
 
 Usage: 
     python exercise1.py
