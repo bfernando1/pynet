@@ -2,8 +2,7 @@
 
 """
 Author: Bradley Fernando
-Purpose: Reads a file and opens it twice. The result of the first output is a 
-         string. The second output results as a list. 
+Purpose: Reads a file and opens it twice. The result of the first output is          a string. The second output results as a list. 
 
 Usage: 
     python exercise1.py
