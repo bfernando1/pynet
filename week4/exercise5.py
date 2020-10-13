@@ -38,7 +38,7 @@ line_div = '-' * 50
 print(line_div)
 
 print('IPv6 Addresses Found:')
-for found_ips in range(len(ipv6_list)):
-    print("{:>5}. {:10}".format(found_ips + 1, ipv6_list[found_ips]))
+for num, found_ips in enumerate(ipv6_list):
+    print("{:>5}. {:10}".format((num + 1), found_ips))
 
 print(line_div)
