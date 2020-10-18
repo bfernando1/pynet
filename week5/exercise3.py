@@ -1,13 +1,8 @@
 #! /usr/bin/env python3
+import re 
 
 def format_mac(mac_string):
-    if '.' in mac_string:
-        delimiter = '.'
-    elif '-' in mac_string:
-        delimiter = '-'
-    elif ':' in mac_string:
-        delimiter = ':'
-    mac_string = mac_string.upper().split(delimiter)
+    mac_string = re.split(r"[.\-/:]", mac_string)
     mac_addr = octet_check(mac_string)
 
     mac_addr = ''.join(mac_string)
@@ -18,7 +13,7 @@ def format_mac(mac_string):
         mac_addr = mac_addr[2:]
         mac_list.append(new_mac)
 
-    return ':'.join(mac_list)
+    return ':'.join(mac_list).upper()
 
 
 def octet_check(octet):
@@ -44,3 +39,5 @@ assert "01:02:0A:0B:03:44" == format_mac("1-2-a-b-3-44")
 assert "01:23:02:34:04:56" == format_mac("123.234.456")
 print(format_mac("aabb.ccdd.eeff"))
 print(format_mac("123.234.456"))
+print(format_mac("1:2:a:b:3:44"))
+
