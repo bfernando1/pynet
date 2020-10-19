@@ -1,7 +1,7 @@
 # Python for Network Engineers 
 
 Below are my solutions for the Python for Network Engineers course led by 
-[Kirk Byers][pynet]. 
+[Kirk Byers][pynet]. All programs are written in Python 3.8.5
 
 ## Table of Contents 
 
@@ -16,3 +16,4 @@ Below are my solutions for the Python for Network Engineers course led by
 
 
 [pynet]: https://pynet.twb-tech.com/email-signup.html
+
