@@ -1,4 +1,5 @@
 ---
+
 interfaces:
 - Ethernet1:
     mode: access
