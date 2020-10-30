@@ -1,8 +1,10 @@
-interface {{ interface_name }}
-  switchport mode {{ switchport_mode }}
-{%- if switchport_mode  == 'access' %}
-  switchport access vlan {{ access_vlan }}
-{%- elif switchport_mode == 'trunk' %}
-  switchport trunk native vlan {{ native_vlan }}
-  switchport trunk allowed vlan {{ trunk_vlans }}
+{%- for intf_name,v in interfaces.items() %} 
+interface {{ intf_name }}
+  switchport mode {{ v.mode }}
+  {%- if v.mode == 'access' %}
+  switchport access vlan {{ v.vlan }}
+  {%- elif v.mode == 'trunk' %}
+  switchport trunk native vlan {{ v.native_vlan }}
+  switchport trunk allowed vlan {{ v.trunk_vlan }}
 {%- endif %}
+{%- endfor %}
